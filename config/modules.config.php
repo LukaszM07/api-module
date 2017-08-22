@@ -8,6 +8,8 @@
  * List of enabled modules for this application.
  */
 return [
+    'Zend\Cache',
+    'Zend\Form',
     'Zend\Db',
     'Zend\Filter',
     'Zend\Hydrator',
