@@ -8,6 +8,8 @@
  * List of enabled modules for this application.
  */
 return [
+    'Zend\Cache',
+    'Zend\Form',
     'Zend\Db',
     'Zend\Filter',
     'Zend\Hydrator',
@@ -28,4 +30,6 @@ return [
     'ZF\Rpc',
     'ZF\Versioning',
     'Application',
+    'DoctrineModule',
+    'DoctrineORMModule',
 ];
