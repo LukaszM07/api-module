@@ -33,7 +33,9 @@
         "zfcampus/zf-development-mode": "^3.0",
         "doctrine/dbal": "^2.5",
         "doctrine/doctrine-orm-module": "^1.1",
-        "doctrine/migrations": "^1.5"
+        "doctrine/migrations": "^1.5",
+        "mikemix/tactician-module": "^2.0",
+        "league/tactician-doctrine": "^1.1"
     },
     "require-dev": {
         "zendframework/zend-developer-tools": "^1.1",

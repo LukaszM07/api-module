@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "0e2c0fb9fb5f5313a8f63ce1c78810f8",
+    "content-hash": "7a8fece781a9076831e332e2d9f6fedc",
     "packages": [
         {
             "name": "bshaffer/oauth2-server-php",
@@ -954,6 +954,110 @@
             "time": "2017-08-18T19:17:35+00:00"
         },
         {
+            "name": "league/tactician",
+            "version": "v1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/tactician.git",
+                "reference": "1f3aaad497f07a8bef147a37c7e3f2f7c23fcd21"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/tactician/zipball/1f3aaad497f07a8bef147a37c7e3f2f7c23fcd21",
+                "reference": "1f3aaad497f07a8bef147a37c7e3f2f7c23fcd21",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5"
+            },
+            "require-dev": {
+                "mockery/mockery": "~0.9",
+                "phpunit/phpunit": "~4.3",
+                "squizlabs/php_codesniffer": "~2.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "League\\Tactician\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ross Tuck",
+                    "homepage": "http://tactician.thephpleague.com"
+                }
+            ],
+            "description": "A small, flexible command bus. Handy for building service layers.",
+            "keywords": [
+                "command",
+                "command bus",
+                "service layer"
+            ],
+            "time": "2016-02-20T11:14:36+00:00"
+        },
+        {
+            "name": "league/tactician-doctrine",
+            "version": "v1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/tactician-doctrine.git",
+                "reference": "f5a214a110d07dabdd05ee7fb3a155af2d1c0e6c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/tactician-doctrine/zipball/f5a214a110d07dabdd05ee7fb3a155af2d1c0e6c",
+                "reference": "f5a214a110d07dabdd05ee7fb3a155af2d1c0e6c",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/dbal": "^2.4",
+                "league/tactician": "^1.0",
+                "php": ">=5.5"
+            },
+            "require-dev": {
+                "doctrine/orm": "~2.4",
+                "mockery/mockery": "~0.9.7",
+                "phpunit/phpunit": "~4.8",
+                "squizlabs/php_codesniffer": "~2.0"
+            },
+            "suggest": {
+                "doctrine/orm": "Required if you need to use ORM Transaction Middleware"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "League\\Tactician\\Doctrine\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ross Tuck"
+                }
+            ],
+            "description": "Plugins for Tactician commands using Doctrine, like wrapping every command in a transaction",
+            "homepage": "https://github.com/thephpleague/tactician-doctrine",
+            "keywords": [
+                "command bus",
+                "doctrine",
+                "tactician",
+                "transactions"
+            ],
+            "time": "2017-01-05T09:49:53+00:00"
+        },
+        {
             "name": "michelf/php-markdown",
             "version": "1.7.0",
             "source": {
@@ -1003,6 +1107,61 @@
                 "markdown"
             ],
             "time": "2016-10-29T18:58:20+00:00"
+        },
+        {
+            "name": "mikemix/tactician-module",
+            "version": "2.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mikemix/TacticianModule.git",
+                "reference": "f9cfbe7095d10c472e19c11df4bdaa44e705b84c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mikemix/TacticianModule/zipball/f9cfbe7095d10c472e19c11df4bdaa44e705b84c",
+                "reference": "f9cfbe7095d10c472e19c11df4bdaa44e705b84c",
+                "shasum": ""
+            },
+            "require": {
+                "league/tactician": "^1.0",
+                "php": "^5.6 || ^7.0",
+                "zendframework/zend-mvc": "^3.0",
+                "zendframework/zend-servicemanager": "^3.0"
+            },
+            "require-dev": {
+                "league/tactician-doctrine": "^1.0",
+                "phpunit/phpunit": "^4.8"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "TacticianModule\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Gary Hockin",
+                    "homepage": "http://hock.in",
+                    "role": "Trailblazer"
+                },
+                {
+                    "name": "Michal Zukowski",
+                    "homepage": "https://www.phpcontext.com"
+                }
+            ],
+            "description": "ZF3 Module to use the League of Extraordinary Packages' Tactician library - flexible command bus implementation",
+            "keywords": [
+                "Zend Framework",
+                "command bus",
+                "tactician",
+                "thephpleague",
+                "zf3"
+            ],
+            "time": "2016-09-29T12:01:18+00:00"
         },
         {
             "name": "ocramius/package-versions",
@@ -3943,12 +4102,12 @@
             "version": "1.0.3",
             "source": {
                 "type": "git",
-                "url": "https://github.com/kherge-abandoned/php-json.git",
+                "url": "https://github.com/kherge-php/json.git",
                 "reference": "60c696c9370a1e5136816ca557c17f82a6fa83f1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kherge-abandoned/php-json/zipball/60c696c9370a1e5136816ca557c17f82a6fa83f1",
+                "url": "https://api.github.com/repos/kherge-php/json/zipball/60c696c9370a1e5136816ca557c17f82a6fa83f1",
                 "reference": "60c696c9370a1e5136816ca557c17f82a6fa83f1",
                 "shasum": ""
             },
@@ -3996,6 +4155,7 @@
                 "schema",
                 "validate"
             ],
+            "abandoned": "kherge/json",
             "time": "2013-10-30T16:51:34+00:00"
         },
         {
@@ -4053,6 +4213,7 @@
                 "phar",
                 "update"
             ],
+            "abandoned": true,
             "time": "2013-10-30T17:23:01+00:00"
         },
         {
@@ -4161,6 +4322,7 @@
             ],
             "description": "A parsing and comparison library for semantic versioning.",
             "homepage": "http://github.com/kherge/Version",
+            "abandoned": true,
             "time": "2012-08-16T17:13:03+00:00"
         },
         {
