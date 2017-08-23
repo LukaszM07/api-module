@@ -30,4 +30,5 @@ return [
     'DoctrineModule',
     'DoctrineORMModule',
     'TacticianModule',
+    'TestApi',
 ];
