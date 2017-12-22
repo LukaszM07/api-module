@@ -63,4 +63,7 @@ return [
     'tactician'       => [
         'handler-map' => [],
     ],
+    'query-bus'       => [
+        'handler-map' => [],
+    ],
 ];
