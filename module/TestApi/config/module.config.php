@@ -111,7 +111,10 @@ return [
     'tactician'              => [
         'handler-map' => [
             CreateTestCommand::class => CreateTestCommandHandler::class,
-
+        ],
+    ],
+    'query-bus'       => [
+        'handler-map' => [
             GetTestByIdQuery::class => GetTestByIdQueryHandler::class,
         ],
     ],
