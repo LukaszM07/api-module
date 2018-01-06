@@ -8,9 +8,24 @@ return [
     'zf-content-negotiation' => [
         'selectors' => [],
     ],
-    'db' => [
+    'db'                     => [
         'adapters' => [
             'dummy' => [],
+        ],
+    ],
+    'doctrine'               => [
+        'migrations_configuration' => [
+            'orm_default' => [
+                'directory' => 'migrations',
+                'namespace' => 'Migrations',
+                'table'     => 'migrations',
+            ],
+        ],
+        'configuration'            => [
+            'orm_default' => [
+                'types' => [
+                ],
+            ],
         ],
     ],
 ];
